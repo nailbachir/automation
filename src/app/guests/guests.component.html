@@ -1,0 +1,26 @@
+<div>
+  <div class="titcont">
+    <h3>Guests of Honor</h3>
+  </div>
+  <div class="container-card">
+    <div class="row">
+      <div class="column" *ngFor="let guest of guests">
+        <div class="cardo">
+          <img src="{{guest.src}}" alt="{{guest.name}}">
+          <p class="name">{{guest.name}}</p>
+          <button mat-stroked-button
+                  (click)="sendBio({ name: guest.name, src: guest.src, bio: guest.bio, isActive: true })">
+            Biography
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  

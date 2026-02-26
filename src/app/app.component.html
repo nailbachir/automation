@@ -1,0 +1,149 @@
+
+<mat-drawer-container class="example-container"  >
+  <mat-drawer  class="drawer" mode="over" position = "end" [(opened)]="sidebarActive" > <app-sidebar  [data]="data" ></app-sidebar>
+  </mat-drawer>  
+
+    <mat-drawer  #drawer mode="over" position = "start"  > 
+<div class="drawercontainer">
+  <button mat-button (click)="scrollToSection('section1',drawer)">Home</button>
+  <button mat-button (click)="scrollToSection('section2',drawer)">Commities</button>
+
+  <button mat-button (click)="downloadPDF()">Call for papers</button>
+  <button mat-button (click)="scrollToSection('submission',drawer)"> Submission  </button>
+  <button mat-button (click)="scrollToSection('section3',drawer)" >Speakers</button>
+  <button mat-button (click)="scrollToSection('regbut',drawer)">Registration </button>
+  <button mat-button (click)="scrollToSection('spon',drawer)">Sponsors   </button>
+  <button mat-button (click)="openDialog()">Contact</button>
+
+</div>
+     
+  </mat-drawer>  
+    <mat-drawer-content   (click)="closeSidenav()"  >
+      
+      <mat-toolbar color="primary">
+        <span>ICATRES</span>
+        <span class="spacer"></span>
+         
+        <button mat-button (click)="scrollToSection('section1',drawer)">Home</button>
+        <button mat-button (click)="scrollToSection('section2',drawer)">Commities</button>
+        <button mat-button (click)="scrollToSection('regbut',drawer)">Registration</button>
+ 
+        <button mat-button (click)="scrollToSection('section3',drawer)">Speakers</button>
+        <button mat-button (click)="scrollToSection('section4',drawer)">Guests</button>
+
+        <button mat-button (click)="scrollToSection('submission',drawer)">Submission</button>
+
+        <button mat-button   (click)="scrollToSection('spon',drawer)">Sponsors</button>
+        <button mat-button (click)="openDialog()">Contact</button>
+
+      </mat-toolbar>
+       
+      
+      
+      
+      <div class="homepiccont">
+
+      <img src="solar.gif" />
+      <button mat-mini-fab class ="menbut" (click)="drawer.toggle()"><mat-icon>menue</mat-icon></button>
+       
+      <div class="center">1st Workshop on Intelligent Computing and Cybernetics ‘’WICC'26’’, June 2026.
+      </div>
+
+      </div>
+       <div class="responsiveone">
+         <div class="logoapp" >
+          <img  width="90%" src="logo.png"/>
+         </div> 
+         <div class="logoapp">
+          <img  width="60%" src="ima24.png"/>
+       </div>
+               <div class="restwo">
+                 <div class="dateButton">
+                 
+                 <button mat-stroked-button> June, 2026</button>
+                 <p>DJELFA, ALGERIA</p>
+                 </div>
+                 <div  class="callforpaper">
+                   <button mat-flat-button (click)="downloadPDF()"> Call For Papers </button>
+                </div>
+                <div  class="program">
+                  <button mat-flat-button (click)="downloadPDFPR()"> Program </button>
+               </div>
+               <div  class="qr">
+                 <img src="qr.png"/>
+             </div>
+                </div>
+       </div>
+       <div class="containernews">
+        <div class="titlelast">News : </div>
+
+         <div class="marquee-container">
+          <div class="marquee-text">
+            #ICATRES# Currently, the ICATRES 2024 conference is submitted for indexing in the Springer database.  #ICATRES# A reduction up to -3000 DA will be applied to the registration fees for all accepted papers. #ICATRES# A virtual presentation (remotely) is possible.</div>
+               </div>
+
+       </div>
+
+      
+      <div class="datesimp">
+           <div  class="impdate">
+           <p>Important Dates </p>
+           </div>
+        <div class="dates">
+          <p class="fd">March 01, 2026  </p> 
+          <p class="sd">Open Submission Due: Invited paper </p>
+      
+        </div>
+        <div class="dates">
+          <p class="fd">April  25, 2026 </p> 
+          <p class="sd">Final Submission Due: Final paper</p>
+        </div>
+        <div class="dates">
+          <p class="fd">May 20, 2026  </p> 
+          <p class="sd">Notification of Acceptance Due 	</p>
+        </div>
+      </div>
+
+      <app-carousel ></app-carousel>
+
+
+     <app-speakers id="section3" (dataEvent)="addItem($event)" class="speakmain"></app-speakers>
+
+     
+
+     <app-submition id="submission"></app-submition>
+
+<app-bottomsheet id="section2" class="commitmain"></app-bottomsheet>
+
+<div class="sponsors" id="spon">
+
+  <h3>Sponsors</h3>
+
+  </div>
+  <div class="bigcont">
+    <div class="imgsponcont">
+      <div class="containerfill"><img src="univlogo.jpeg"/></div>
+    <div class="containerfill"><img src="laser.jpg"/></div>
+    <div class="containerfill"><img src="dimel.jpg"/></div>
+    <div class="containerfill"><img src="meta.jpg"/></div>
+
+    <div class="containerfill"><img src="sonatrach.jpg"/></div>
+    <div class="containerfill"><img src="sonalgaw.jpg"/></div>
+
+    <div class="containerfill"><img src="rsdt.jpg"/></div>
+     </div>
+  </div>
+ 
+<div class="buttonsReg" id="regbut" >
+      
+  <button >Registration </button>
+  <button   (click)="openDialog()">   Contact us   </button>
+  
+  </div>
+
+  
+
+    </mat-drawer-content>
+</mat-drawer-container>
+
+

@@ -1,0 +1,97 @@
+.container-card {
+  width: 100%;
+  margin-left: 12%;
+align-items: center;
+justify-content: center;}
+
+.container-card .column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.container-card .row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.container-card .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .container-card .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .container-card {
+    margin-left: 1%;
+  margin-top: 3%;
+  }
+  
+}
+
+/* Style the counter cards */
+.container-card .cardo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 5%;
+  text-align: center;
+  background-color: white;
+  border-radius: 5%;
+  height: 30%;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.container-card .cardo img {
+  width: 100%;
+  border-top-left-radius: 5%;
+  object-fit: cover;
+  border-top-right-radius: 5%;
+}
+
+.container-card .cardo .name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black;
+  margin-top: 6%;
+  font-family: "Questrial";
+}
+
+.container-card .cardo button {
+  margin-bottom: 5%;
+  align-items: center;
+  font-family: "Questrial";
+  font-size: 1.5rem;
+
+}
+.row p {
+  color: black;
+  text-align: center;
+  font-family: "Questrial";
+  font-size: 1.70rem;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+.titcont{
+  margin-top: 2%;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titcont h3{
+  font-size: x-large;
+  font-weight: bold;
+}
+  

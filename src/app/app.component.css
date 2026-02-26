@@ -1,0 +1,466 @@
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+/* mat-menu{
+    background-color: red;
+  }
+  .mat-toolbar {
+    position: relative;
+
+    z-index: 5;
+} */
+.tool{
+    width: 100%;
+    z-index: 1;
+
+    display: flex;
+    background-color: #EFE6FF
+}
+.tool button{
+
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family:"Questrial";
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.homepiccont {
+    display: flex;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 50vh; /* Set the desired height for the container */
+    width: 100%;
+    overflow: hidden; /* Prevents overflow of the image */
+}
+
+.center {
+    z-index: 1;
+    width: 90%;
+    top: 83%;
+    left: 50%;
+    position: absolute;
+    color: rgb(212, 223, 241);
+    transform: translate(-50%, -50%);
+    font-family: "Questrial";
+    font-size: 1.35rem;
+    font-weight: 500;
+    text-align: center; /* Center the text within its container */
+}
+.menbut{
+  z-index: 2;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+}
+.homepiccont img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 100%; /* Ensures the image fills the container height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.buttonsReg{
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttonsReg button{
+    height: 4vh;
+    width: 40%;
+    border: none;
+     background-color:  rgb(59, 130, 246);
+     border-radius: 12px;
+    color: white;
+    border-radius: 8px;
+    margin: 4%;
+    text-align: center;
+    font-size:1.2rem;
+    font-family:"Questrial";  
+   
+}
+
+.titleconf{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.titleconf p{
+    font-size: 1.22rem;
+    font-weight: bold;
+    font-family:"Questrial";
+
+}
+.dateButton{
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    width: 100%;
+}
+.dateButton P{
+    margin-top: 3%;
+    margin-left: 2%;
+    color: rgba(59,130,246,1);
+    font-family:"Questrial";
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+.dateButton button{
+    border: 2px solid rgba(59,130,246,1);
+    border-radius: 10px;
+    margin-left: 2%;
+    color: rgba(59,130,246,1);
+    font-family:"Questrial";
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2%;
+
+}
+.datesimp{
+    margin-top: 7%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:rgba(59,130,246,1);
+}
+.datesimp p {
+    margin-top: 5%;
+    font-size: xx-large;
+    color:azure;
+    font-weight: 550;
+
+}
+.dates{
+   width: 90%;
+   background-color: white;
+   display: block;
+   border: 2px solid white;
+   border-radius: 15px;  
+   margin: 4%;
+}
+ 
+.dates .fd {
+    color: rgb(59, 130, 246);
+    font-family:"Questrial";
+    font-size: 1.50rem;
+    font-weight: bolder;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+
+}
+
+.dates .sd {
+    color: black;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   font-family:"Questrial";
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.impdate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.impdate p{
+    font-family:"Questrial";
+    font-weight: bold;
+    font-size: 1.60rem;
+}
+
+  
+mat-drawer{
+    position: fixed;
+    height: 100%;
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px){
+    .mat-toolbar{
+        display: none;
+    }
+    mat-drawer{
+        position: fixed;
+        height: 100%;
+        width: 80%;
+    } 
+   
+
+    .tool{ 
+      display: none;
+     }
+}
+@media screen and (min-width: 1000px){
+    
+    .responsiveone{
+       width: 70%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+     .responsiveone img{
+       width: 70%;
+
+     }
+     .restwo{
+        margin-top: 4%;
+        width: 70%;
+
+     }
+   .homepiccont{
+    height: 90vh;
+   }
+   .center{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+   }
+   .menbut{
+    display: none;
+   }
+    mat-drawer{
+        position: fixed;
+        height: 100%;
+        width: 30%;
+    } 
+    .dateButton{
+        align-items: center;
+        justify-content: center;
+        font-family:"Questrial";
+        font-size: 1rem;
+
+    }
+    .dateButton p{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2%;
+        font-family:"Questrial";
+    font-size: 1rem;
+    font-weight: bold;
+    }
+    .callforpaper button{
+      align-items: center;
+      justify-content: center;
+    }
+    .titlelast{
+        font-size: 1.75rem;
+    }
+    .marquee-text{
+        font-size: 1.75rem;
+        color: black;
+
+    }
+}
+
+
+
+.callforpaper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.callforpaper button{
+    border: 2px solid rgba(59,130,246,1);
+    border-radius: 10px;
+    margin-left: 2%;
+    background-color: rgba(59,130,246,1);
+    font-family:"Questrial";
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2%;
+    width: 80%;
+}
+.program{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.qr{
+  width: 100%;
+  margin-top: 2%;
+  padding: 7%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+.qr img{
+  width: 40%;
+}
+.program button{
+  border: 2px solid rgba(255, 147, 147, 1)
+  ;
+  border-radius: 10px;
+  margin-left: 2%;
+  background-color: rgba(255, 147, 147, 1)
+  ;
+  font-family:"Questrial";
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2%;
+  width: 80%;
+}
+.drawercontainer{
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: white;
+
+}
+.drawercontainer button{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+mat-toolbar button {
+align-items: center;
+text-align: center;
+font-family:"Questrial";
+font-size: 1rem;
+font-weight: bold;
+padding: 1%;
+
+}
+mat-toolbar span{
+    color: rgba(59,130,246,1);
+    font-weight: bold;
+}
+.logoapp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    padding: 2%;
+}
+hr.solid {
+   
+
+
+  border-top: 3px solid rgba(59,130,246,1);
+
+  }
+  .sponsors{
+    margin-top: 2%;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:"Questrial";
+
+  }
+  .sponsors h3{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .imgsponcont{
+    margin-top: 2%;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+ 
+  .containerfill{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 50%;
+  }
+  .containerfill img{
+    object-fit: fill;
+    align-items: center;
+    width: 60%;
+  }
+  .bigcont{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .containernews{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgb(212, 223, 241);
+
+   
+}
+  .importantremarque{
+    margin-top: 2%;
+    padding: 3%;
+    font-weight: bold;
+   font-size: 1.24rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:"Questrial";
+
+  }
+  .marquee-container {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 1%;
+  padding: 10px;
+  background-color: rgb(212, 223, 241);
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 1%;
+  animation: marquee 35s linear infinite;
+  font-weight: bold;
+  color: #721c24;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.titlelast{
+    width: 20%;
+    text-align: end;
+    font-weight: bold;
+
+    color: #721c24;
+}

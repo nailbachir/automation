@@ -1,0 +1,9 @@
+<p class="titlecommit">Commities</p>
+
+<div class="commities">
+  <button  mat-stroked-button  *ngFor="let commitie of commities"
+          class="commities-button"
+          (click)="openBottomSheet(commitie.members)">
+    {{commitie.name}}
+  </button>
+</div>

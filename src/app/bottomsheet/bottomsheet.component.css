@@ -1,0 +1,44 @@
+
+.commities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between buttons */
+    padding: 5%;
+  }
+  
+ 
+  .commities button {
+    padding: 10px 20px;
+    border-color: rgba(59,130,246,1);
+     border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap; /* Prevents text wrapping inside buttons */
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    white-space: normal;
+    font-family:"Questrial";
+  }
+  
+
+  .commities{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Adjust the spacing between chips as needed */
+    margin-left: 2%;
+    padding: 5%;
+    width: 100%;
+  
+}
+
+.titlecommit{
+    
+        color: black;
+        text-align: center;
+        font-family: "Questrial";
+        font-size: 1.70rem;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 1%;
+      
+}

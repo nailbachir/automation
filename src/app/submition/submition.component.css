@@ -1,0 +1,80 @@
+.submission{
+    margin-top: 2%;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentsub{
+    background-color: rgba(59,130,246,1);
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.contentsub h6 {
+
+
+   color: rgba(59,130,246,1);
+   font-family:"Questrial";
+   text-align: center;
+
+}
+.contentsub h5  h3{
+
+
+    color: rgba(59,130,246,1);
+    font-family:"Questrial";
+    text-align: center;
+ 
+ }
+.contentsub p {
+    flex-wrap: wrap;
+   font-size: 1.2rem;
+    font-family:"Questrial";
+    margin-left: 2%;
+    flex-wrap: wrap;
+   font-family:"Questrial";
+   text-align: center;
+ 
+ }
+ .contentsub li {
+
+    font-size: 1.2rem;
+     font-family:"Questrial";
+     flex-wrap: wrap;
+   font-family:"Questrial";
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-right: 2%;
+
+
+  
+  }
+   .containersubel{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding-top: 1%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px;  
+    margin: 4%; 
+    width: 90%;
+} 
+
+ #test button{
+    border-color: rgba(59,130,246,1);
+     border-radius: 12px;
+     height: 3vh;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap; /* Prevents text wrapping inside buttons */
+    font-size: 1rem;
+    white-space: normal;
+    font-family:"Questrial";
+}
+.submission h3{
+    font-size: x-large;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,24 @@
+<div>
+  <div class="titcont">
+    <h3>Speakers</h3>
+  </div>
+  <div class="container-card">
+    <div class="row">
+      <div class="column" *ngFor="let speaker of speakers">
+        <div class="cardo">
+          <img src="{{speaker.src}}" alt="{{speaker.name}}">
+          <p class="name">{{speaker.name}}</p>
+          <button mat-stroked-button
+                  (click)="sendBio({ name: speaker.name, src: speaker.src, bio: speaker.bio, isActive: true })">
+            Biography
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

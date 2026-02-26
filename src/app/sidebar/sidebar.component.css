@@ -1,0 +1,31 @@
+
+ .head p{
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-family:"Questrial";
+
+  }
+.head img{
+  width: 60%;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 8%;
+}
+  
+.head{
+ width: 80%;
+
+}
+.body{
+  width: 80%;
+  height: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+
+}
+.body p{
+  font-family:"Questrial";
+  font-size: 1.25rem;
+} 
